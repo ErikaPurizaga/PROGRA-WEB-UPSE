@@ -10,6 +10,11 @@ a {
 	background: #A9F5F2;
 
 }
+img {max-width:100%;
+}
+
+
+
 /*HEADING*/
 header {
 	background: #0066FF;
@@ -43,4 +48,33 @@ nav a.selected{
 nav a:hover{
 	color:#E0F8EC;
 }
+
+
+
+
 /*FOOTER*/
+
+
+
+
+/*INDEX*/
+#galeria{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#galeria li {
+	float :left;
+	width: 45%;
+	margin:2.5%;
+	background-color: #CEF6F5;
+	color: #bdc3c7;
+} 
+
+#galeria li a p{
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #013ADF;
+}
