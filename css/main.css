@@ -1,3 +1,4 @@
+/*GENERAL*/
 a {
 	text-decoration: none;
 }
@@ -6,24 +7,40 @@ a {
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 5%;
+	background: #A9F5F2;
 
 }
-
-#logo { text-align: center;
-        margin:0;}
-
+/*HEADING*/
 header {
 	background: #0066FF;
-	border-color: #6ab47b;
+	border-color: #04B404;
 
 }
-
+#logo { text-align: center;
+        margin:0;}
 h1,h2 {
-	color:#ffffFF; 
+	color:#E0F8EC; 
 }
+h1{
+	font-family: 'Montserrat', sans-serif;
+	margin:15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+/*NAVIGATION*/
 nav {
-	background: #006666;
+	background: #2E9AFE;
 }
 nav a , nav a :visited{
-	color:#99FFFF;
+	color:#2E2EFE;
 }
+/*PARA SABER EN QUE PAGINA ESTA*/
+nav a.selected{
+	color:#2EFE9A;
+}
+/*PARA QUE CAMBIE DE COLOR CUANDO PASE EL MOUSE*/
+nav a:hover{
+	color:#E0F8EC;
+}
+/*FOOTER*/
