@@ -162,4 +162,18 @@ display: block;
 .contact-info li.twitter a {
 	background-image: url('../img/twitter.png');
 }
-
+/*Eventos*/
+h3,h4 {
+	color:#0040FF; 
+}
+h3,h4{
+	font-family: 'Lora', serif;
+	margin:15px 0;
+	font-size: 1.9em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+.even-dest li {
+	list-style: none;
+	
+}
