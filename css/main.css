@@ -128,7 +128,6 @@ footer {
 	max-width: 150px;
 	margin: 0 auto 30px;
 	border-radius:100%;
-	border
 }
 
 
@@ -175,5 +174,10 @@ h3,h4{
 }
 .even-dest li {
 	list-style: none;
-	
+}
+.img-aniversario {
+	display:block;
+	max-width: 450px;
+	margin: 0 auto 60px;
+	border-radius:25%;
 }
