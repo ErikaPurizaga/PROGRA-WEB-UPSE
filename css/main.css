@@ -38,7 +38,7 @@ h1,h2 {
 	color:#E0F8EC; 
 }
 h1{
-	font-family: 'Passion One', cursive;
+	font-family: 'Aclonica', sans-serif;
 	margin:15px 0;
 	font-size: 1.9em;
 	font-weight: normal;
@@ -74,7 +74,7 @@ nav li {
 nav a {
 	font-weight: 800;   /*Aumentar el pesod e la fuente*/
 	padding: 15px 10px;/* margenes arriba abajo 15 , dercha iz 10*/ /* PARA QUE EL AREA DEL CLICK SEA MAS GRANDE COMO UN BOTON*/
-
+    font-family: 'Passion One',cursive;
 }
 
 
