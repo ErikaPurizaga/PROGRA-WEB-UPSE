@@ -199,3 +199,26 @@ h3,h4{
 #parrafo {
 	text-align: justify;
 }
+
+
+/***************************
+         OVERLAY
+***************************/
+#overlay{
+	background: rgba(0,0,0,0.7);/*ulñtimovalor es opacity*/
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align: center;
+	display: none;/*para que no se muestre al comienzo*/
+	}
+
+#overlay img{
+	margin-top: 10%;
+}
+
+#overlay p {
+	color:white;
+}
