@@ -80,3 +80,77 @@ $button.click (function(){
 	//Toma el valor de la opccion seleccionada
 	window.location= $select.val();
 });*/
+
+/*usario y  paswword */
+
+//esconder ayudas
+var $password = $("#password");
+var $confirmPassword = $("#confirm_password");
+
+$("form span").hide();
+function esPasswordValido()
+{
+	return ($password.val().length > 8);
+}
+
+
+
+function coincidenPasswords()
+{
+	return ($password.val() === $confirmPassword.val());
+}
+
+
+
+function eventoPassword(){
+	//Validar si la clave es valida
+if(esPasswordValido()){
+	//esxconder ayuda si es clave valida
+	$password.next().hide();
+}else{
+	//Caso contrario mostrar ayuda
+     $password.next().show();
+}
+}
+/*if($password.val().length > 8){
+		//Econder ayuda si la clñave es v{alida
+			$password.next().hide();
+		}else{
+			//CVaso Contrario mostrar ayuda
+			$password.next().show();
+		}
+	}*/
+
+
+function confirmarPassword(){
+	if($password.val() === $confirmPassword.val()){
+		$confirmPassword.next().hide();	
+		}else{
+
+			$confirmPassword.next().show();	
+	}
+}
+
+
+function usuarioIngresado(){
+	return ($("#username").val().length > 0);
+}
+
+
+function validacionCompleta()
+{
+	return esPasswordValido() && coincidenPasswords() && usuarioIngresado();
+}
+
+
+
+function puedeEnviar()
+{
+	$("#submit").prop("disabled",!validacionCompleta());
+}
+	//cuando el usuario ingresa clave (evento input)
+	//recordemis que podemos llamar multiples metodos en cadena
+    //podemos incluso concatenar varias veces el mismo evento
+    $password.focus(eventoPassword).keyup(eventoPassword).focus();
+    $confirmPassword.focus(confirmarPassword).keyup(confirmarPassword).focus();
+     puedeEnviar();
